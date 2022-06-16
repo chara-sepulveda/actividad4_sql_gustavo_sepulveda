@@ -1,0 +1,5 @@
+SELECT*
+FROM cities, continents, countries, continents_countries_cities
+WHERE cities.id=continents_countries_cities.cities_id
+AND continents.id=continents_countries_cities.continents_id
+AND countries.id=continents_countries_cities.countries_id
